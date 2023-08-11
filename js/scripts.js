@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -51,4 +50,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Redirect function for the redirectToSite button
+    const redirectButton = document.getElementById('redirectToSite');
+    if (redirectButton) {  // Check if the button exists before attaching the listener
+        redirectButton.addEventListener('click', function() {
+            window.location.href = "http://harjoitustyo2.makjes22.treok.io/";
+        });
+    }
 });
