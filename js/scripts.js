@@ -50,11 +50,23 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Redirect function for the redirectToSite button
     const redirectButton = document.getElementById('redirectToSite');
-    if (redirectButton) {  // Check if the button exists before attaching the listener
-        redirectButton.addEventListener('click', function() {
-            window.location.href = "http://harjoitustyo2.makjes22.treok.io/";
-        });
+    if (redirectButton) {
+    redirectButton.addEventListener('click', function() {
+    window.location.href = "http://harjoitustyo2.makjes22.treok.io/";
+    });
+    }
+
+    const redirectButton2 = document.getElementById('redirectToSite2');
+    if (redirectButton2) {
+    redirectButton2.addEventListener('click', function() {
+    window.location.href = "http://harjoitustyo1.makjes22.treok.io/";
+    });
+    }
+    const redirectButton3 = document.getElementById('redirectToSite3');
+    if (redirectButton3) {
+    redirectButton3.addEventListener('click', function() {
+    window.location.href = "https://makjes22.treok.io/verkkokauppa/";
+    });
     }
 });
