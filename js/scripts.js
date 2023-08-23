@@ -44,14 +44,21 @@ window.addEventListener('DOMContentLoaded', event => {
     const redirectButton = document.getElementById('redirectToSite');
     if (redirectButton) {
     redirectButton.addEventListener('click', function() {
-    window.location.href = "http://harjoitustyo2.makjes22.treok.io/";
+        window.location.href = "http://harjoitustyo2.makjes22.treok.io/";
     });
     }
 
     const redirectButton2 = document.getElementById('redirectToSite2');
     if (redirectButton2) {
     redirectButton2.addEventListener('click', function() {
-    window.location.href = "http://harjoitustyo1.makjes22.treok.io/";
+        window.location.href = "http://harjoitustyo1.makjes22.treok.io/";
+    });
+    }
+
+    const redirectButton3 = document.getElementById('redirectToSite3');
+    if (redirectButton3) {  // Changed from redirectButton2 to redirectButton3
+    redirectButton3.addEventListener('click', function() {
+        window.location.href = "https://d3b168-3.myshopify.com/";
     });
     }
 });
