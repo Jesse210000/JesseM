@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const redirectButton3 = document.getElementById('redirectToSite3');
     if (redirectButton3) {  // Changed from redirectButton2 to redirectButton3
     redirectButton3.addEventListener('click', function() {
-        window.location.href = "/fanikauppa";
+        window.location.href = "JesseMakela/fanikauppa";
     });
     }
 });
