@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const redirectButton = document.getElementById('redirectToSite');
     if (redirectButton) {
     redirectButton.addEventListener('click', function() {
-        window.location.href = "http://harjoitustyo2.makjes22.treok.io/";
+        window.location.href = "https://gpslife.app/";
     });
     }
 
