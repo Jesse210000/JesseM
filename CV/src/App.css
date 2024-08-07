@@ -1,0 +1,72 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.education {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #2196F3;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #2196F3;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.timeline-content p {
+  margin: 5px 0 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: -50%;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  left: 50%;
+  text-align: left;
+}
+
