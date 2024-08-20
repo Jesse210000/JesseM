@@ -9,8 +9,11 @@ function Projects({ language }) {
     },
     {
       title: 'GPSLife app',
-      description: language === 'en' ? 'This is my personal project I worked around 6 months. It is still being hosted nowdays at my home server, allowing it to be still visible and interactible. :)' : 'Tämä on henkilökohtainen projektini, jota työstin noin kuusi kuukautta. Tätä projektia hostataan silti vielä kotipalvelimellani, sallien sen olevan näkyvissä ja interaktiivinen.',
+      description: language === 'en' ? 'This is my personal project I worked around 6 months. It is still being hosted nowdays at my home server, allowing it to be still visible and interactible.' : 'Tämä on henkilökohtainen projektini, jota työstin noin kuusi kuukautta. Tätä projektia hostataan silti vielä kotipalvelimellani, sallien sen olevan näkyvissä ja interaktiivinen.',
       link: 'https://gpslife.app',
+    },
+    {
+      title: 'Lorenzo '
     }
   ];
 
