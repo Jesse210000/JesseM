@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Certifications({ language }) {
-  const pdfFile = '.../public/img/Certification.pdf';
+  const pdfFile = '../assets/Certification.pdf';
 
   return (
     <section className="my-8 p-6 bg-white rounded-lg shadow-lg">

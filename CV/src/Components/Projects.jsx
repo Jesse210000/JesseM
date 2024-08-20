@@ -7,6 +7,11 @@ function Projects({ language }) {
       description: language === 'en' ? 'This project was made as a school project. Please note this project only includes the frontend.' : 'Tämä projekti tehtiin kouluprojektina. Huomaa, että tämä projekti sisältää vain frontendin.',
       link: 'https://jesse210000.github.io/JesseMakela/fanikauppa/',
     },
+    {
+      title: 'GPSLife app',
+      description: language === 'en' ? 'This is my personal project I worked around 6 months. It is still being hosted nowdays at my home server, allowing it to be still visible and interactible. :)' : 'Tämä on henkilökohtainen projektini, jota työstin noin kuusi kuukautta. Tätä projektia hostataan silti vielä kotipalvelimellani, sallien sen olevan näkyvissä ja interaktiivinen.',
+      link: 'https://gpslife.app',
+    }
   ];
 
   return (
