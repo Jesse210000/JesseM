@@ -2,11 +2,6 @@ import React from 'react';
 import Star from '../assets/Star.png';
  
 function Skills({ language }) {
-  const softSkills = [
-    'Python', 'PHP', 'JavaScript', 'Node.js', 'MongoDB', 'MySQL',
-    'CSS', 'HTML'
-  ];
- 
   const programmingSkillsData = [
     { skillName: 'Python', stars: 5 },
     { skillName: 'JavaScript', stars: 4 },
@@ -22,12 +17,18 @@ function Skills({ language }) {
     { skillName: 'AdobeXD', stars: 2},
     { skillName: 'Visual Studio Code', stars: 5},
     { skillName: 'Git', stars: 5},
-    { skillName: 'Hosting servers', stars: 4}
+    { skillName: 'Hosting servers', stars: 4},
+    { skillName: 'WordPress', stars: 3}
   ];
+ 
+  const orderFromBest = (data) => {
+    console.log(data)
+    return data.sort((a, b) => b.stars - a.stars);
+  };
  
   const calculateScore = (stars) => {
     return (
-      <p className="text-gray-800 font-semibold">
+      <p className="text-white-800 font-semibold">
         {stars}/5
       </p>
     );
@@ -54,6 +55,8 @@ function Skills({ language }) {
     );
   };
  
+  const sortedProgrammingSkills = orderFromBest(programmingSkillsData);
+ 
   return (
     <section className="my-8 p-6 bg-white rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold mb-6 text-gray-900">
@@ -65,17 +68,18 @@ function Skills({ language }) {
             {language === 'en' ? 'Programming Languages' : 'Ohjelmointikielet'}
           </h3>
           <ul className="space-y-4">
-            {programmingSkillsData.map((skill, index) => (
+            {sortedProgrammingSkills.map((skill, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-r from-green-200 to-green-400 p-4 rounded-lg shadow-md"
+                className="my-8 p-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-lg shadow-lg text-white"
               >
                 <div className="flex justify-between items-center">
-                  <h1 className="text-xl font-semibold text-gray-900">
+                  <h1 className="text-xl font-semibold text-white-900">
                     {skill.skillName}
                   </h1>
                   {calculateScore(skill.stars)}
                 </div>
+                {/*
                 <div className="w-full bg-gray-200 h-4 rounded-full mt-2 relative overflow-hidden">
                   <div
                     style={{ width: `${calculatePercent(skill.stars)}%` }}
@@ -84,6 +88,7 @@ function Skills({ language }) {
                     {calculatePercent(skill.stars).toFixed(0)}%
                   </div>
                 </div>
+                */}
                 {giveStars(skill.stars)}
               </div>
             ))}

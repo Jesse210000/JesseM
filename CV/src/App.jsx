@@ -23,9 +23,9 @@ function App() {
       <Summary language={language} />
       <Experience language={language} />
       <Education language={language} />
-      <Skills language={language} />
       <Projects language={language} />
       <Certifications language={language} />
+      <Skills language={language} />
     </div>
   );
 }

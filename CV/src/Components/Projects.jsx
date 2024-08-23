@@ -14,7 +14,7 @@ function Projects({ language }) {
     },
     {
       title: 'Lorenzo ',
-      description: language === 'en' ? 'This is my second client project after Luotain. It includes only frontend. The design was the main point in this project. The customer was satisfied by this website.' : 'Tämä on Luotaimen jälkeen minun toinen asiakastyöni. Tyylin tekeminen oli pääasia tässä projektissa. Asaikas oli tyytyväinen lopputyöhön.',
+      description: language === 'en' ? 'This is my second client project after Luotain. It includes only frontend. The design was the main point in this project. The customer was satisfied by this website.' : 'Tämä on Luotaimen jälkeen toinen asiakastyöni. Tyylin tekeminen oli pääasia tässä projektissa. Asaikas oli tyytyväinen lopputyöhön.',
       link: 'https://lorenzo.gpslife.app',
     }
   ];
