@@ -21,7 +21,8 @@ function Skills({ language }) {
     { skillName: 'Figma', stars: 4},
     { skillName: 'AdobeXD', stars: 2},
     { skillName: 'Visual Studio Code', stars: 5},
-    { skillName: 'Git', stars: 5}
+    { skillName: 'Git', stars: 5},
+    { skillName: 'Hosting servers', stars: 4}
   ];
  
   const calculateScore = (stars) => {
