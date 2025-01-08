@@ -2,12 +2,12 @@ import React from 'react';
 
 function Summary({ language }) {
   return (
-    <section className="my-8 p-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-lg shadow-lg text-white">
-      <h2 className="text-2xl font-bold mb-4">{language === 'en' ? 'Summary' : 'Yhteenveto'}</h2>
+    <section className="experience bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 className="text-3xl font-semibold mb-4">{language === 'en' ? 'Introduction' : 'Esittely'}</h2>
       <p className="text-lg">
-        {language === 'en' 
-          ? 'As a software developer student with a passion for technology, I thrive on international challenges. Eager for fresh experiences, I specialize in programming and am prepared to contribute innovative solutions for various projects.' 
-          : 'Olen ohjelmistokehittäjäopiskelija, joka on innostunut teknologiasta ja viihtyy kansainvälisten haasteiden parissa. Olen innokas saamaan uusia kokemuksia, erikoistun ohjelmointiin ja olen valmis tuomaan innovatiivisia ratkaisuja erilaisiin projekteihin.'}
+        {language === 'en'
+          ? 'I am a dedicated software developer with a strong background and interest in web and game development. I thrive on solving complex problems and am always eager to learn new technologies. With expertise in many program languages, I have a versatile skill set to bring innovative ideas to life. My passion lies in creating efficient, user-friendly applications and contributing to impactful projects.'
+          : 'Olen omistautunut ohjelmistokehittäjä, jolla on vahva tausta ja mielenkiinto web- ja pelikehitykseen. Pidän haasteiden ratkaisemisesta ja uusien teknologioiden oppimisesta. Hallitsen monia ohjelmointialustoja, ja minulla on monipuolinen taitovalikoima, jolla voin toteuttaa innovatiivisia ideoita. Intohimoni on luoda tehokkaita ja käyttäjäystävällisiä sovelluksia sekä osallistua merkityksellisiin projekteihin.'}
       </p>
     </section>
   );

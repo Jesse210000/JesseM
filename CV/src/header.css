@@ -1,0 +1,62 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141E30, #243B55);
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .animated-bg {
+    background: radial-gradient(circle at 50% 50%, #1e293b, #0f172a);
+    animation: gradientShift 10s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animated-sections {
+    padding: 2rem;
+    animation: fadeInUp 2s ease;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  

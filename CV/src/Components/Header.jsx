@@ -1,32 +1,22 @@
 import React from 'react';
+import profileImage from '../assets/MyPhoto.webp';
+import '../Header.css';
 
 function Header({ language }) {
-  const contactInfo = {
-    email: 'jesse.makela13@gmail.com',
-    phone: '+358 0465712319',
-    picture: 'https://media.licdn.com/dms/image/D5603AQGAL010La0Uzg/profile-displayphoto-shrink_800_800/0/1718272776133?e=1728518400&v=beta&t=j0s4F8PTxmJb_wnxIjP71x_GbL4U0rpqOzQ6q5f648A', 
-  };
-
   return (
-    <header className="bg-gray-100 p-6 shadow-md rounded-lg text-center">
+    <header className="header-container flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-10">
       <img
-        src={contactInfo.picture}
+        src={profileImage}
         alt="Jesse Mäkelä"
-        className="w-32 h-32 rounded-full mx-auto mb-4"
+        className="profile-pic w-32 h-32 rounded-full shadow-lg border-4 border-white"
       />
-      <h1 className="text-3xl font-bold underline mb-2">Jesse Mäkelä</h1>
-      <h2 className="text-xl mb-2">
+      <h1 className="name text-4xl font-bold mt-4">Jesse Mäkelä</h1>
+      <h2 className="text-xl font-medium mt-2">
         {language === 'en' ? 'Software Developer' : 'Ohjelmistokehittäjä'}
       </h2>
-      <p className="text-gray-700 mb-1">
-        {language === 'en' ? 'Contact Information' : 'Yhteystiedot'}
-      </p>
-      <p className="text-gray-700">
-        {contactInfo.email}
-      </p>
-      <p className="text-gray-700 mb-4">
-        {contactInfo.phone}
-      </p>
+      <br />
+      <i>jesse.makela13@gmail.com</i>
+      <i>+358 465712319</i>
     </header>
   );
 }

@@ -1,31 +1,18 @@
 import React from 'react';
- 
+
 function Certifications({ language }) {
-  const onButtonClick = () => {
-    const pdUrl = './Certification.pdf'; 
-    const link = document.createElement('a');
-    link.href = pdUrl;
-    link.setAttribute('download', 'Certification.pdf'); 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
- 
   return (
-    <section className="my-8 p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4">{language === 'en' ? 'Certifications' : 'Sertifikaatit'}</h2>
-      <div className="bg-gray-100 p-4 rounded-lg mb-4 shadow-inner">
-        <h3 className="text-xl font-semibold">Web Security Basics</h3>
-        <p className="text-gray-700">DevSecLab, March 26, 2024</p>
+    <section className="certifications bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 className="text-3xl font-semibold mb-4">{language === 'en' ? 'Certifications' : 'Sertifikaatit'}</h2>
+      <div className="mb-4">
+        <h3 className="text-xl font-bold text-blue-400">Web Security Basics</h3>
+        <p className="text-gray-300">DevSecLab, March 2024</p>
       </div>
-      <button
-        onClick={onButtonClick}
-        className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition-colors"
-      >
-        {language === 'en' ? 'Download Certification' : 'Lataa Sertifikaatti'}
+      <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded transition duration-300">
+        {language === 'en' ? 'Download Certificate' : 'Lataa Sertifikaatti'}
       </button>
     </section>
   );
 }
- 
+
 export default Certifications;

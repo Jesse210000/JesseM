@@ -1,43 +1,56 @@
 import React from 'react';
 
 function Projects({ language }) {
-  const projectData = [
+  const projects = [
     {
-      title: 'Cookie website 😋',
-      description: language === 'en' ? 'This project was made as a school project. Please note this project only includes the frontend.' : 'Tämä projekti tehtiin kouluprojektina. Huomaa, että tämä projekti sisältää vain frontendin.',
+      title: 'Cozy Creations',
+      description: language === 'en' 
+        ? 'A live website for real business programmed using Django framework. (Python) '
+        : 'Verkkokauppa oikealle yritykselle ohjelmoitu käyttäen Django-ohjelmistotuotetta. (Python)',
+      link: 'https://eleve.ink/',
+    },
+    {
+      title: 'Cookies 😋',
+      description: language === 'en' 
+        ? 'A personal project. Includes only frontend. (React) '
+        : 'Henkilökohtainen projekti. Sisältää ainoastaan frontin. (React)',
       link: 'https://jesse210000.github.io/JesseMakela/fanikauppa/',
     },
     {
-      title: 'GPSLife app',
-      description: language === 'en' ? 'This is my personal project I worked around 6 months. It is still being hosted nowdays at my home server, allowing it to be still visible and interactible.' : 'Tämä on henkilökohtainen projektini, jota työstin noin kuusi kuukautta. Tätä projektia hostataan silti vielä kotipalvelimellani, sallien sen olevan näkyvissä ja interaktiivinen.',
-      link: 'https://gpslife.app',
+      title: 'Tredun Älykoti',
+      description: language === 'en' 
+        ? 'I was a part of the developers in Tredu smarthome project. (React)'
+        : 'Olin yksi kehittäjistä Tredun älykotiprojektissa. (React)',
+      link: 'https://smarthome.node.treok.io/',
     },
-    {
-      title: 'Lorenzo ',
-      description: language === 'en' ? 'This is my second client project after Luotain. It includes only frontend. The design was the main point in this project. The customer was satisfied by this website.' : 'Tämä on Luotaimen jälkeen toinen asiakastyöni. Tyylin tekeminen oli pääasia tässä projektissa. Asaikas oli tyytyväinen lopputyöhön.',
-      link: 'https://lorenzo.gpslife.app',
-    }
+
   ];
 
   return (
-    <section className="my-8 p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4">{language === 'en' ? 'Projects' : 'Projektit'}</h2>
-      <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
-        {projectData.map((project, index) => (
-          <div key={index} className="bg-gray-100 p-4 rounded-lg shadow-inner hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-            <p className="text-gray-700 mb-2">{project.description}</p>
-            <a
-              href={project.link}
-              className="text-blue-500 hover:underline hover:text-blue-700 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {language === 'en' ? 'View Project' : 'Näytä projekti'}
-            </a>
+    <section className="projects bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 className="text-3xl font-semibold mb-4">{language === 'en' ? 'Projects' : 'Projektit'}</h2>
+      <div className="mt-4 border-t border-gray-600 pt-2 text-sm text-gray-400">
+        <i>
+          {language === 'en'
+            ? "Some of the projects are being run on my configured server. (Linux server)"
+            : "Osa projekteistani pyörii Linux-palvelimellani."}
+          </i>
           </div>
-        ))}
-      </div>
+          <br />
+      {projects.map((project, index) => (
+        <div key={index} className="mb-4">
+          <h3 className="text-xl font-bold text-blue-400">{project.title}</h3>
+          <p className="text-gray-300">{project.description}</p>
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+          >
+            {language === 'en' ? 'View Project' : 'Näytä projekti'}
+          </a>
+        </div>
+      ))}
     </section>
   );
 }
