@@ -6,13 +6,12 @@ function Skills({ language }) {
     { name: 'HTML', level: 5 },
     { name: 'CSS', level: 5 },
     { name: 'Python', level: 4 },
-    { name: 'Django', level: 4 },
-    { name: 'C#', level: 4 },
+    { name: 'Django', level: 3 },
+    { name: 'C#', level: 3 },
     { name: 'Angular', level: 3 },
     { name: 'React', level: 4 },
     { name: 'WordPress', level: 3 },
     { name: 'SQL', level: 3 },
-    { name: 'C#', level: 3 },
     { name: 'Linux Web Hosting', level: 4 },
   ];
 
@@ -21,6 +20,32 @@ function Skills({ language }) {
       <h2 className="text-4xl font-bold text-white mb-6">
         {language === 'en' ? 'Programming languages' : 'Ohjelmointikielet'}
       </h2>
+      <p className="mt-4 border-t border-gray-600 pt-2 text-sm text-gray-400">
+        {language === 'en'
+          ? 'The more the bar is filled, the more proficient I am in the language. (1-5)'
+          : 'Mitä enemmän baari on täytetty, sitä parempi olen kyseisessä kielessä.'}
+      </p>
+      <br />
+      <ul className="text-gray-300 mt-2 mb-6">
+      {language === 'en' ? (
+        <>
+        <li>5 = Proficient</li>
+        <li>4 = Skilled</li>
+        <li>3 = Good</li>
+        <li>2 = Beginner</li>
+        <li>1 = Novice</li>
+      </>
+    ) : (
+      <>
+        <li>5 = Erittäin taitava</li>
+        <li>4 = Taitava</li>
+        <li>3 = Hyvä</li>
+        <li>2 = Aloittelija</li>
+        <li>1 = Alkeet</li>
+    </>
+  )}
+</ul>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {skills.map((skill, index) => (
           <div
@@ -34,6 +59,11 @@ function Skills({ language }) {
                 style={{ width: `${skill.level * 20}%` }}
               ></div>
             </div>
+            <p className="text-sm text-gray-400 mt-2">
+              {language === 'en'
+                ? `Skill level: ${skill.level}/5`
+                : `Taitotaso: ${skill.level}/5`}
+            </p>
           </div>
         ))}
       </div>

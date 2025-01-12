@@ -15,16 +15,17 @@ function Experience({ language }) {
       company: 'Luotain Consulting Oy',
       date: 'October 2023 - December 2023',
       description: language === 'en' 
-        ? 'At Luotain Consulting, I contributed to developing client-facing web applications using WordPress. My key achievements include improving application style, resolving bugs, and implementing new features.'
-        : 'Luotain Consultingilla osallistuin asiakaslähtöisten web-sovellusten kehittämiseen käyttämällä WordPressiä. Merkittävimpiä saavutuksiani olivat sovelluksen tyylin parantaminen, virheiden korjaaminen ja uusien ominaisuuksien toteuttaminen.',
+      ? 'At Luotain Consulting, I contributed to developing client-facing web applications using WordPress. My key achievements include improving application style, resolving bugs, and implementing new features. These improvements led to an increase in customer satisfaction and streamlined user experience.'
+      : 'Luotain Consultingilla osallistuin asiakaslähtöisten web-sovellusten kehittämiseen käyttämällä WordPressiä. Merkittävimpiä saavutuksiani olivat sovelluksen tyylin parantaminen, virheiden korjaaminen ja uusien ominaisuuksien toteuttaminen. Nämä parannukset nostivat asiakastyytyväisyyttä ja sujuvoittivat käyttäjäkokemusta.',
+
     },
     {
       title: language === 'en' ? 'Summer job' : 'Kesätyöpaikka',
       company: 'Tampere University Hospital (TAYS)',
       date: 'June 2022 - July 2022',
       description: language === 'en' 
-        ? 'My duties included advising TAYS patients, export, helping staff and shelving of goods and pharmaceuticals.'
-        : 'Tehtäviini kuului TAYS:in potilaiden neuvonta, vienti, henkilöstön avustaminen sekä tavaroiden ja lääkkeiden hyllytys.',
+        ? 'My duties included advising TAYS patients, export, helping staff and shelving of goods and pharmaceuticals, my prior skill of previous summer jobs had helped with coordinating with the staff along with organizing with the shelfs. The patients in the hospital gets a lot of my care and it shows how I can help boost customers satisfactory rate by a lot.'
+        : 'Tehtäviini kuului TAYS:n potilaiden neuvonta, vientitehtävät, henkilöstön avustaminen sekä tavaroiden ja lääkkeiden hyllytys. Aiemmat kokemukseni kesätyöpaikoista auttoivat minua henkilöstön kanssa työskentelyssä ja hyllyjen järjestämisessä. Sairaalan potilaat saivat osakseen paljon huolenpitoa, mikä osaltaan paransi merkittävästi asiakastyytyväisyyttä.',
     },
   ];
 

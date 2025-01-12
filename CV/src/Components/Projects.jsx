@@ -5,16 +5,17 @@ function Projects({ language }) {
     {
       title: 'Cozy Creations',
       description: language === 'en' 
-        ? 'A live website for real business programmed using Django framework. (Python) '
-        : 'Verkkokauppa oikealle yritykselle ohjelmoitu käyttäen Django-ohjelmistotuotetta. (Python)',
+        ? 'A live website for business programmed using Django framework. (Python) '
+        : 'Verkkokauppa yritykselle ohjelmoitu käyttäen Django-ohjelmistoa. (Python)',
       link: 'https://eleve.ink/',
     },
     {
       title: 'Cookies 😋',
-      description: language === 'en' 
-        ? 'A personal project. Includes only frontend. (React) '
-        : 'Henkilökohtainen projekti. Sisältää ainoastaan frontin. (React)',
+      description: language === 'en'
+      ? 'A personal project showcasing my frontend development skills using React. The project is a fan merchandise store prototype, featuring a modern design, dynamic components, and responsive layout. It demonstrates my ability to create user-friendly interfaces and efficiently manage component-based architecture.'
+      : 'Henkilökohtainen projektini, jossa esittelen front-end-kehitystaitojani Reactin avulla. Projekti on fanituotekaupan prototyyppi, joka sisältää modernin ulkoasun, dynaamisia komponentteja ja responsiivisen rakenteen. Se osoittaa kykyni luoda käyttäjäystävällisiä käyttöliittymiä ja hallita tehokkaasti komponenttipohjaista arkkitehtuuria.',
       link: 'https://jesse210000.github.io/JesseMakela/fanikauppa/',
+
     },
     {
       title: 'Tredun Älykoti',
