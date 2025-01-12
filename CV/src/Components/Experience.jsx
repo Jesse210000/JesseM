@@ -8,7 +8,7 @@ function Experience({ language }) {
       date: 'October 2024 - February 2025',
       description: language === 'en' 
         ? 'In this role, I worked on various software development projects, including full-stack web applications and backend integrations. My responsibilities included developing RESTful APIs, and collaborating with cross-functional teams to ensure seamless project delivery.'
-        : 'Tässä roolissa työskentelin monipuolisissa ohjelmistokehitysprojekteissa, kuten web-sovellusten ja taustajärjestelmien integrointien parissa. Vastuualueeni sisälsivät RESTful-rajapintojen kehittämisen,ja yhteistyön monialaisissa tiimeissä projektien sujuvan toteutuksen varmistamiseksi.',
+        : 'Tässä roolissa työskentelin monipuolisissa ohjelmistokehitysprojekteissa, kuten web-sovellusten ja taustajärjestelmien integrointien parissa. Vastuualueeni sisälsivät RESTful-rajapintojen kehittämisen ja yhteistyön monialaisissa tiimeissä projektien sujuvan toteutuksen varmistamiseksi.',
     },
     {
       title: language === 'en' ? 'Software Developer Intern' : 'Ohjelmistokehittäjä Harjoittelija',
